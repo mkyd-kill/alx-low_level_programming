@@ -3,10 +3,10 @@
 /* more headers goes there */
 #include <stdio.h>
 /* betty style doc for function main goes there */
-/*
- * main - checks if a number is positive or negative
+/**
+ * main - Entry point
  *
- * return: 0 for success
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
