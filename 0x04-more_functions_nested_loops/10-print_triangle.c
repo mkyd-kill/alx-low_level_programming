@@ -16,11 +16,11 @@ void print_triangle(int size)
 	{
 		for (x = 1; x <= size; x++)
 		{
-			for (y = 0; y < size - i; y++)
+			for (y = size - x; y > 1; y--)
 			{
 				_putchar(32);
 			}
-			for (z = 0; z < x; z++)
+			for (z = 0; z <= x; z++)
 			{
 				_putchar(35);
 			}
