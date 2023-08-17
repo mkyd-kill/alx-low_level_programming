@@ -1,12 +1,12 @@
-#include "main.h"
 #include <stdio.h>
 /**
- * main - prints fuzz buzz 
+ * main - prints fuzz buzz
  * Return: 0 (success)
  */
 int main(void)
 {
 	int x;
+
 	for (x = 1; x <= 100; x++)
 	{
 		if ((x % 3 == 0) && (x % 5 == 0))
@@ -25,7 +25,7 @@ int main(void)
 		{
 			printf("%d", x);
 		}
-		if ( x != 100)
+		if (x != 100)
 		{
 			printf(" ");
 		}
