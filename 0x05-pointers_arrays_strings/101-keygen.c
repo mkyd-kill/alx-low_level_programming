@@ -1,28 +1,33 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#define PASSWORD_LENGTH 8
 /**
  * main - generates radnom valid passwords
  * Return: 0 success
  */
-int main(void)
+void generate_password(char *password)
 {
 	char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-	int charset_size = sizeof(charset) - 1;
-	int i, index;
-	int password_length = 8;
-	char password[password_length + 1];
+        int charset_size = sizeof(charset) - 1;
+        int i, index;
 
-	srand(time(NULL));
+        srand(time(NULL));
 
-	for (i = 0; i < password_length; i++)
-	{
-		index = rand() % charset_size;
-		password[i] = charset[index];
-	}
-	password[password_length] = '\0';
+        for (i = 0; i < PASSWORD_LENGTH; i++)
+        {
+                index = rand() % charset_size;
+                password[i] = charset[index];
+        }
+        password[PASSWORD_LENGTH] = '\0';
+}
 
-	printf("Generated password: %s\n", password);
+int main(void)
+{
+	char password[PASSWORD_LENGTH + 1];
+	generate_password(password);
+
+	printf("%s\n", password);
 
 	return (0);
 }
