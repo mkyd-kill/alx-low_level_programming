@@ -7,13 +7,13 @@
  */
 int main(void)
 {
-	srand(time(NULL));
-
 	char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 	int charset_size = sizeof(charset) - 1;
 	int i, index;
 	int password_length = 8;
-	char password[password_length];
+	char password[password_length + 1];
+
+	srand(time(NULL));
 
 	for (i = 0; i < password_length; i++)
 	{
