@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define PASSWORD_LENGTH 8
+#define PASSWORD_LENGTH 64
 /**
  * main - generates radnom valid passwords
  * Return: 0 success
