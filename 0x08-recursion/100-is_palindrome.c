@@ -9,7 +9,7 @@ int is_palidrome(char *s)
 	int len = _strlen_recursion(s);
 	int i, j;
 
-	for (i = 0; j = len - 1; i < j; i++, j--)
+	for (i = 0, j = len - 1; i < j; i++, j--)
 	{
 		if (s[i] != s[j])
 		{
