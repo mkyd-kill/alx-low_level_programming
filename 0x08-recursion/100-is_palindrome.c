@@ -11,21 +11,29 @@ int _strlen_recursion(char *s)
 	return (0);
 }
 /**
+ * check_pal - checks for palidrome
+ * @s: String
+ * @n: Start
+ * @e: End
+ * Return: 1 if yes 0 otherwise
+ */
+int check_pal(char *s, int s, int e)
+{
+	if (n >= e)
+		return (1);
+	if (s[n] != s[e])
+		return (0);
+	return (check_pal(s, n + 1, e - 1));
+}
+/**
  * is_palidrome - checks if a string is a palidrome
  * @s: The string
  * Return: 1 if yes 0 otherwise
  */
+
 int is_palindrome(char *s)
 {
 	int len = _strlen_recursion(s);
-	int i, j;
-
-	for (i = 0, j = len - 1; i < j; i++, j--)
-	{
-		if (s[i] != s[j])
-		{
-			return (0);
-		}
-	}
-	return (1);
+	
+	return (check_pal(s, 0, len - 1));
 }
