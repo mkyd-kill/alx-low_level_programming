@@ -12,11 +12,15 @@ char *create_array(unsigned int size, char c)
 	char *array;
 	unsigned int i;
 
+	/*If size if 0, return null*/
+	if (size == 0)
+		return (NULL);
+
 	/*Array memory allocation*/
 	array = (char *)malloc(size * sizeof(char));
 
+	/*Return null if memory allocation fails*/
 	if (array == NULL)
-		/*Return NULL if memory allocation fails*/
 		return (NULL);
 
 	for (i = 0; i < size; i++)
