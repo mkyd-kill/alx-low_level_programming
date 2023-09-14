@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef HEADER_FILE
+#define HEADER_FILE
 int _putchar(char c);
 
 int sum_them_all(const unsigned int n, ...);
