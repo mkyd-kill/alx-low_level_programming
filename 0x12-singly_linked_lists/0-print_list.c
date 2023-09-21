@@ -7,11 +7,10 @@
 size_t print_list(const list_t *h)
 {
 	unsigned int i = 0;
-	
+
 	if (h == NULL)
 		return (0);
-	do
-	{
+	do {
 		if (h->str == NULL)
 			printf("[%u] (nil)\n", h->len);
 		else
