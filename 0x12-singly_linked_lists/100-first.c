@@ -1,5 +1,5 @@
 #include "lists.h"
-/**
+/*
  * A constructor that executes before main
  */
 void _print_first(void)__attribute__((constructor));
