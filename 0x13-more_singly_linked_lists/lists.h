@@ -1,5 +1,9 @@
 #ifndef HEADER_FILE
 #define HEADER_FILE
+#include<string.h>
+#include <stdlib.h>
+#include <stdarg.h>
+#include <stdio.h>
 /**
  * struct listint_s - singly linked list
  * @n: integer
