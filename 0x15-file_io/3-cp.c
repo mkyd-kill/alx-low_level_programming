@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	from = argv[1];
 	to = argv[2];
 	fd_from = open(from, O_RDONLY);
-	if (from == -1)
+	if (fd_from == -1)
 	{
 		dprintf(2, "Error: Can't read from file %s\n", from);
 		exit(98);
