@@ -2,7 +2,7 @@
 #define _FUNCTION_POINTERS
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdef.h>
+#include <stddef.h>
 int _putchar(char c);
 void print_name(char *name, void (*f)(char *));
 void array_iterator(int *array, size_t size, void (*action)(int));
